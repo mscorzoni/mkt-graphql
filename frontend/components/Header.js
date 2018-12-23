@@ -6,7 +6,7 @@
      <div>
        <div className="bar">
          <a href="">Mkt-GraphQL</a>
-         <Nav></Nav>
+         <Nav /> 
        </div>
        <div className="sub-bar">
         <p>Search</p>
