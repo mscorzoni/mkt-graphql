@@ -49,7 +49,7 @@ injectGlobal`
   }
   a {
     text-decoration: none;
-    color: ${theme.black};
+    color: ${theme.black };
   }
 `;
 
