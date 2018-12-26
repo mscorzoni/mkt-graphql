@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Items from '../components/Items'
 
 const Home = () => {
   return (
     <div>
-      <p>Home</p> 
+      <Items />
     </div>
   );
 };
