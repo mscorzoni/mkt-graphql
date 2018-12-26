@@ -2,7 +2,7 @@
 
 type Mutation {
   createItem(title: String, description: String, 
-  Price: Int, image: String, largeImage: String): Item!
+  price: Int, image: String, largeImage: String): Item!
 }
 
 type Query {
