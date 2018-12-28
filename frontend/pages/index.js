@@ -1,7 +1,7 @@
 import React from 'react';
 import Items from '../components/Items'
 
-const Home = () => {
+const Home = props => {
   return (
     <div>
       <Items />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 

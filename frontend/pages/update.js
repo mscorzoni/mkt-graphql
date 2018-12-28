@@ -9,4 +9,4 @@ const Sell = ({query}) => {
   );
 };
 
-export default Sell;
+export default Sell; 
