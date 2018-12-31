@@ -1,10 +1,13 @@
 import React from 'react';
 import CreateItem from '../components/CreateItem';
+import PleaseSignIn from '../components/PleaseSignIn';
 
 const Sell = props => {
   return (
     <div>
-      <CreateItem />
+      <PleaseSignIn>
+        <CreateItem />
+      </PleaseSignIn>
     </div>
   );
 };
