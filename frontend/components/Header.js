@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import Nav from './Nav';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import Cart from './Cart'; 
+import Cart from './Cart';
+import Search from './Search';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -71,7 +72,7 @@ Router.onRouteChangeError = () => {
          <Nav /> 
        </div>
        <div className="sub-bar">
-        <p>Search</p>
+        <Search />
        </div>
        <Cart />
      </StyledHeader>
