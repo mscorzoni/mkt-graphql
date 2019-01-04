@@ -29,8 +29,8 @@ function totalItems(cart){
 }
 
 class TakeMyMoney extends Component {
-  onToken = (res, createOrder) => {
-    createOrder({
+  onToken = async (res, createOrder) => {
+    const order = await createOrder({
       variables: {
         token: res.id,
       }
@@ -54,7 +54,7 @@ class TakeMyMoney extends Component {
             name="Mkt-GraphQl"
             description={`Order of ${totalItems(me.cart)}
             items`}
-            image={me.cart[0].item && me.cart[0].item.image}
+            image={me.cart.length && me.cart[0].item && me.cart[0].item.image}
             stripeKey="pk_test_m1sO7LpwQ1foUylksoOgorw2"
             currency="USD"
             email={me.email}
