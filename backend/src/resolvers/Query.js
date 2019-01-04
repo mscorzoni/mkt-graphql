@@ -39,6 +39,17 @@ const Query = {
       throw new Error('You cant see this')
     }
     return order;
+  },
+  async orders(parent, args, ctx, info ){
+    const { userId } = ctx.request;
+    if(!userId) {
+      throw new Error('you must be signed')
+    }
+    return ctx.db.query.orders({
+      where: {
+        user: { id: userId }
+      }
+    }, info)
   }
 };
 
